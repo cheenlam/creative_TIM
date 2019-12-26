@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/78e6f741f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/myselfCss.css">
+    <title>CREATIVE TIM</title>
+
+</head>
+
+<body>
+
+
+    <div class="contain">
+        <!-- 蓋全版 -->
+        <div class="all_fluid">
+            <div class="sidebar_close" id="sidebar_close">
+                <i class="far fa-times-circle"></i>
+            </div>
+        </div>
+
+        <!-- 側邊選單 -->
+        <div class="sidebar" id="sidebar">
+
+            <div class="sidebar_top">
+                <h3>CREATIVE TIM</h3>           
+            </div>
+            <div class="sidebar_ipt">
+                <input type="text" placeholder="Search...">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+             <ul>
+                <li id="sidebar_dashboard" class="nowpage">
+                    <i class="fas fa-cubes"></i>
+                    <a href="#"></a>Dashboard</a>
+                </li>
+                <li id="sidebar_user">
+                    <i class="fas fa-user"></i>
+                    <a href="#">User Profile</a>
+                </li>
+                <li id="sidebar_list">
+                    <i class="far fa-list-alt"></i>
+                    <a href="#">Table List</a>
+                </li>
+                <li id="sidebar_typography" class="nocontain">
+                    <i class="fas fa-border-style"></i>
+                    <a href="#">Typography</a>
+                </li>
+                <li id="sidebar_icons">
+                    <i class="fas fa-icons"></i>
+                    <a href="#">Icons</a>
+                </li>
+                <li id="sidebar_mpas">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="#">Maps</a>
+                </li>
+                <li id="sidebar_notifications" class="nocontain">
+                    <i class="fas fa-bell"></i>
+                    <a href="#">Notifications</a>
+                </li>
+                <li id="sidebar_support" class="nocontain">
+                    <i class="fas fa-globe"></i>
+                    <a href="#">RTL Support</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- 文章內容 -->
+        <div class="container-fluid  contain_body" id="contain_body">
+            <!-- 導覽列 -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+                  <p>Dashboard</p>
+                <button class="navbar-toggler" type="button" id="btnbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </div>
+            </nav>
+
+            <!-- 外連網頁 -->
+            <iframe src="dashboard.html" width="100%" height="100%"></iframe> 
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+        //點擊選項觸發網頁內容更換及選單顏色變換
+        $('#sidebar_dashboard').click(function () {
+            $('#navbar p').text('Dashboard')
+            $('#contain_body iframe').attr('src','dashboard.html')
+            $('#sidebar li').removeClass('nowpage')
+            $(this).addClass('nowpage')
+        })
+        $('#sidebar_user').click(function () {
+            $('#navbar p').text('User Profile')
+            $('#contain_body iframe').attr('src','user.html')
+            $('#sidebar li').removeClass('nowpage')
+            $(this).addClass('nowpage')
+        })
+        $('#sidebar_list').click(function () {
+            $('#navbar p').text('Table List')
+            $('#contain_body iframe').attr('src','list.html')
+            $('#sidebar li').removeClass('nowpage')
+            $(this).addClass('nowpage')
+        })
+        $('#sidebar_icons').click(function () {
+            $('#navbar p').text('Icons')
+            $('#contain_body iframe').attr('src','icons.html')
+            $('#sidebar li').removeClass('nowpage')
+            $(this).addClass('nowpage')
+        })
+        $('#sidebar_mpas').click(function () {
+            $('#navbar p').text('Maps')
+            $('#contain_body iframe').attr('src','maps.html')
+            $('#sidebar li').removeClass('nowpage')
+            $(this).addClass('nowpage')
+        })
+
+        //漢堡選單視窗開合控制
+        $('#btnbar').click(function () {
+            $('#sidebar').addClass('toside');
+            $('#contain_body').addClass('toside');
+            $('#sidebar_close').addClass('toside');
+            $('.all_fluid').css('display', 'block');
+        })
+        $('#sidebar_close').click(function () {
+            $('#sidebar').removeClass('toside');
+            $('#contain_body').removeClass('toside');
+            $('.all_fluid').css('display', 'none');
+        })
+        //當螢幕大小變動時，還原選單視窗
+        $(window).resize(function(){
+            $('#sidebar').removeClass('toside');
+            $('#contain_body').removeClass('toside');
+            $('.all_fluid').css('display', 'none');
+        })
+
+
+    </script>
+
+
+</body>
+
+</html>

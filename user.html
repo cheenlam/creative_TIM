@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/78e6f741f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/myselfCss.css">
+    <link rel="stylesheet" href="css/user.css">
+    <title>page_user</title>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!-- 編輯個人資料 -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="edit">
+                    <div class="edit_icon icon_01">
+                        <h3>Edit Profile</h3>
+                        <p>Complete your profile</p>
+                    </div>
+                    <div class="row edit_ipt">
+                        <div class="col-md-6"><input type="text" placeholder="Username"></div>
+                        <div class="col-md-6"><input type="text" placeholder="Email address"></div>
+                        <div class="col-md-6"><input type="text" placeholder="Fist Name"></div>
+                        <div class="col-md-6"><input type="text" placeholder="Last Name"></div>
+                        <div class="col-md-12"><input type="text" placeholder="Adress"></div>
+                        <div class="col-md-4"><input type="text" placeholder="City"></div>
+                        <div class="col-md-4"><input type="text" placeholder="Country"></div>
+                        <div class="col-md-4"><input type="text" placeholder="Postal Code"></div>
+                        <div class="col-md-12">
+                            <p>Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</p>
+                        </div>
+                        <div class="col-md-12"><input type="text" placeholder="About Me"></div>
+                        <div class="col-md-12"><button>Update Profile</button></div>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="edit">
+                    <div class="edit_icon icon_02">
+                        <img src="image/marc.jpg">
+                    </div>
+                    <div class="edit_text" id="edit_text">
+                        <p>CEO / CO-FOUNDER</p>
+                        <h5>Alec Thompson</h5>
+                        <p>Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is..</p>
+                        <button>FOLLOW</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+        <div class="footer">
+            <ul>
+                <li><a href="#">CREATIVE TIM</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Licenses</a></li>
+            </ul>
+            <p>© 2019, made with favorite by Creative Tim for a better web.</p>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+ $('#edit_text').slideUp(1)
+ 
+setTimeout(function(){
+    $('#edit_text').slideDown(1000);
+},100)
+
+   
+
+
+</script>
+</html>

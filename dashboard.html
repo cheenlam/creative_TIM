@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/78e6f741f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/myselfCss.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>page_dashboard</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <!-- 開頭訊息 -->
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card_stat">
+                    <div class="card_stat_icon icon_01 iconup">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="card_stat_head">
+                        <h3>Used Space</h3>
+                        <p id="nb_01"><tt>0</tt> / 50 GB</p>
+                    </div>
+                    <div class="card_stat_foot">
+                        <i class="fab fa-get-pocket"></i>
+                        Get More Space
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card_stat">
+                    <div class="card_stat_icon icon_02 iconup">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="card_stat_head">
+                        <h3>Revenue</h3>
+                        <p id="nb_02">$ <tt>0</tt></p>
+                    </div>
+                    <div class="card_stat_foot">
+                        <i class="fas fa-birthday-cake"></i>
+                        Last 24 Hours</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card_stat">
+                    <div class="card_stat_icon icon_03 iconup">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="card_stat_head">
+                        <h3>Fixed Issues</h3>
+                        <p id="nb_03"><tt>20</tt></p>
+                    </div>
+                    <div class="card_stat_foot">
+                        <i class="fas fa-code-branch"></i>
+                        Tracked from Github
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card_stat">
+                    <div class="card_stat_icon icon_04 iconup">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="card_stat_head">
+                        <h3>Followers</h3>
+                        <p id="nb_04">+ <tt>0</tt></p>
+                    </div>
+                    <div class="card_stat_foot">
+                        <i class="fas fa-history"></i>
+                        Just Updated</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 報表訊息 -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card_Report">
+                    <div class="card_Report_icon icon_01 iconup">
+                        <img src="image/ch01.svg">
+                    </div>
+                    <div class="card_Report_head">
+                        <h3>Daily Sales</h3>
+                        <p>55% increase in today sales.</p>
+                    </div>
+                    <div class="card_Report_foot">
+                        <i class="fas fa-history"></i>
+                        updated 4 minutes ago</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card_Report">
+                    <div class="card_Report_icon icon_02 iconup">
+                        <img src="image/ch02.svg">
+                    </div>
+                    <div class="card_Report_head">
+                        <h3>Email Subscriptions</h3>
+                        <p>Last Campaign Performance</p>
+                    </div>
+                    <div class="card_Report_foot">
+                        <i class="fas fa-history"></i>
+                        campaign sent 2 days ago</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card_Report">
+                    <div class="card_Report_icon icon_03 iconup">
+                        <img src="image/ch03.svg">
+                    </div>
+                    <div class="card_Report_head">
+                        <h3>Completed Tasks</h3>
+                        <p>Last Campaign Performance</p>
+                    </div>
+                    <div class="card_Report_foot">
+                        <i class="fas fa-history"></i>
+                        campaign sent 2 days ago</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 圖表訊息 -->
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="card_group">
+                    <div class="card_group_icon icon_01"></div>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Sign contract for "What are conference organizers afraid of?"
+                            <span class="badge badge-primary badge-pill">14</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Lines From Great Russian Literature? Or E-mails From My Boss?
+                            <span class="badge badge-primary badge-pill">2</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Flooded: One year later, assessing what was lost.
+                            <span class="badge badge-primary badge-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Create 4 Invisible User Experiences you Never Knew About
+                            <span class="badge badge-primary badge-pill">5</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="card_group">
+                    <div class="card_group_icon icon_02">
+                        <h3>Employees Stats</h3>
+                        <p>New employees on 15th September, 2016</p>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+         <!-- footer -->
+         <div class="footer">
+            <ul>
+                <li><a href="#">CREATIVE TIM</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Licenses</a></li>
+            </ul>
+            <p>© 2019, made with favorite by Creative Tim for a better web.</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    var x = 0 , y = 0 , z = 20 , g = 0;
+    setInterval(function(){
+        if(x <49){
+            x += 1;
+            $('#nb_01 tt').text(x);
+        }
+        if(y<34720){
+            y += 1120;
+            $('#nb_02 tt').text(y);
+        }
+        if(z<70){
+            z += 1;
+            $('#nb_03 tt').text(z);
+        }
+        if(g<245){
+            g += 5;
+            $('#nb_04 tt').text(g);
+        }
+    },20)
+
+    setTimeout(function(){
+        $('.iconup').css('top','-20px').css('transition','1s')
+    },100)
+   
+     
+    </script>
+
+
+</body>
+
+</html>

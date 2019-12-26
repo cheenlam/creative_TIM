@@ -1,0 +1,55 @@
+.list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+    padding: 0 20px;
+}
+
+.list_icon {
+    height: 80px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    color: #fff;
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(255, 152, 0, .4);
+    padding: 20px;
+}
+
+.list_icon h3 {
+    font-size: 16px;
+}
+
+.list th,
+.list td:last-child{
+    color: #fb8c00;
+}
+.list td{
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+.list_nobg .list_icon{
+    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
+}
+.list_nobg th{
+    color: #ab47bc;
+}
+.list_nobg{
+    background: transparent;
+    box-shadow: none;
+}
+.list_nobg td:last-child{
+    color: #555;
+}
+.tb tr:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}

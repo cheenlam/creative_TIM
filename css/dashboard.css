@@ -1,0 +1,159 @@
+
+/* 開頭訊息  */
+.card_stat {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+    position: relative;
+}
+
+.card_stat h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.card_stat p {
+    font-size: 25px;
+}
+
+.card_stat_head {
+    padding: 10px;
+    text-align: end;
+}
+
+.card_stat_foot {
+    padding: 10px;
+    font-size: 12px;
+    border-top: 1px solid #eee;
+}
+
+.card_stat_icon {
+    width: 85px;
+    height: 85px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 85px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #ccc;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.card_stat_icon.icon_01 {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(255, 152, 0, .4);
+}
+
+.card_stat_icon.icon_02 {
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(76, 175, 80, .4);
+}
+
+.card_stat_icon.icon_03 {
+    background: linear-gradient(60deg, #ef5350, #e53935);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(244, 67, 54, .4);
+}
+
+.card_stat_icon.icon_04 {
+    background: linear-gradient(60deg, #26c6da, #00acc1);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(0, 188, 212, .4);
+}
+
+
+/* 報表訊息 */
+.card_Report {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+}
+
+.card_Report_head {
+    padding: 20px;
+}
+
+.card_Report h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.card_Report p {
+    font-size: 14px;
+}
+
+.card_Report_foot {
+    padding: 10px;
+    font-size: 12px;
+    border-top: 1px solid #eee;
+}
+
+.card_Report_icon {
+    width: calc(100% - 40px);
+    height: 180px;
+    border-radius: 4px;
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
+
+.card_Report_icon img{
+    width: 100%;
+    height: 100%;   
+}
+
+
+.card_Report_icon.icon_01 {
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(76, 175, 80, .4);
+}
+
+.card_Report_icon.icon_02 {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(255, 152, 0, .4);
+}
+
+.card_Report_icon.icon_03 {
+    background: linear-gradient(60deg, #ef5350, #e53935);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(244, 67, 54, .4);
+}
+
+
+/* 圖表訊息 */
+.card_group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+}
+
+.card_group_icon {
+    width: calc(100% - 40px);
+    height: 80px;
+    border-radius: 4px;
+    margin: auto;
+    position: relative;
+    top: -20px;
+}
+
+.card_group_icon.icon_01 {
+    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
+}
+
+.card_group_icon.icon_02 {
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(255, 152, 0, .4);
+    padding: 20px;
+}
+
+.card_group_icon h3 {
+    font-size: 16px;
+}

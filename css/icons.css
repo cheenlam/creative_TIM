@@ -1,0 +1,51 @@
+.icons {
+    border-radius: 6px;
+    padding: 0 20px;
+    margin-top: 70px;
+}
+
+.icons_top {
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 4px;
+    color: #fff;
+    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
+    position: relative;
+    top: -20px;
+    line-height: 30px;
+}
+
+.icons_top h3 {
+    font-size: 18px;
+}
+
+.icons_top tt {
+    color: #ccc;
+}
+
+.icons_min {
+    padding: 0 100px;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+}
+
+.icons_min tt {
+    color: #8e24aa;
+}
+.icons_max{
+    padding: 0 20px;
+}
+
+@media (max-width: 991px) {
+    .icons_min{
+        display: block;
+    }
+    .icons_max{
+        display: none;
+    }
+}
